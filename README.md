@@ -1,23 +1,21 @@
-# AquaBio Solutions
+# AquaBio Solutions LLP website draft
 
-A clean, responsive, single-page website starter for AquaBio Solutions. The sample brand presents a nature-informed water and biological solutions business; adjust the copy and contact information to fit the real organization.
+A responsive, single-page company website draft based on the supplied AquaBio Solutions LLP profile and business-card reference. It presents the company's applied-bioscience positioning, 12 business segments, example product families, reverse-engineering process, founders, and contact details.
 
-## Preview locally
+## Preview
 
-No build tools or package installation are required.
+This is a static website; no package installation or build step is required. Open `index.html` in a browser or serve the repository root with any static web server.
 
-1. Clone this repository or download its files.
-2. Open `index.html` in a browser, or serve the folder with any static web server.
+## Files
 
-## Customize before publishing
+- `index.html` — page content and inline brand/hero illustrations
+- `styles.css` — layout, visual design, and responsive styles
+- `script.js` — mobile navigation and current-year display
 
-- Update the title, description, sections, and service language in `index.html`.
-- Replace the sample contact address `hello@aquabio.solutions` in the contact link with a monitored business email.
-- Adjust the colors, typography, and responsive layouts in `styles.css`.
-- The site uses Google Fonts when a network connection is available and falls back to system fonts otherwise.
+## Before launch
 
-The starter is static and does not collect or transmit form submissions. Its contact link opens an email draft in the visitor's mail application.
+Review names, titles, product language, address, email addresses, and phone number against current company information. The contact links use `aquabiollp@gmail.com`, `aquabiopurchase@gmail.com`, and `+91 99865 00299` as shown in the supplied company profile. Replace any outdated details before publishing. Marketing and product descriptions are a draft for review, not technical or regulatory claims.
 
-## Publish
+## Publish with GitHub Pages
 
-The files can be hosted by GitHub Pages or any static hosting provider. For GitHub Pages, open the repository's **Settings → Pages**, choose **Deploy from a branch**, and select the `main` branch and `/ (root)` folder.
+In the repository, open **Settings → Pages**, choose **Deploy from a branch**, then select the `main` branch and `/ (root)` folder. The repository must be public for free GitHub Pages hosting on GitHub Free; otherwise use an eligible plan or another static host.
