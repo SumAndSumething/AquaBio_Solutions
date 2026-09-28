@@ -1,6 +1,6 @@
 # AquaBio Solutions LLP website
 
-A responsive, single-page website for AquaBio Solutions LLP, based on the supplied company profile. It includes the applied-bioscience overview, 12 business segments, product families, reverse-engineering process, founders, contact details, and a visitor-selectable dark or light theme. The selected theme is remembered in the browser; the initial theme follows the device preference.
+A responsive, single-page website for AquaBio Solutions LLP, based on the supplied company profile. The standalone `index.html` includes inline styles and scripts for responsive layout, mobile navigation, and a visitor-selectable dark or light theme. The theme follows the visitor's device preference initially and remembers a manual choice in the browser.
 
 ## Preview locally
 
@@ -12,4 +12,4 @@ Confirm names, titles, product language, address, email addresses, and phone num
 
 ## GitHub Pages
 
-A GitHub Actions workflow in `.github/workflows/pages.yml` deploys the static site after pushes to `main` and can also be started manually. In **Settings → Pages**, choose **GitHub Actions** as the build and deployment source. If Pages cannot be enabled on this private repository, the GitHub account or organization plan does not support private Pages for it. The repository can remain private with an eligible plan; making it public would let anyone browse the repository and site.
+The GitHub Actions workflow in `.github/workflows/pages.yml` deploys the static site after pushes to `main` and can also be started manually. In **Settings → Pages**, choose **GitHub Actions** as the build and deployment source. GitHub Pages websites are publicly accessible. Publishing from a private repository requires an eligible GitHub plan; on the free plan, make the repository public before enabling Pages.
