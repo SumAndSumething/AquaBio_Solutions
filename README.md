@@ -1,21 +1,15 @@
-# AquaBio Solutions LLP website draft
+# AquaBio Solutions LLP website
 
-A responsive, single-page company website draft based on the supplied AquaBio Solutions LLP profile and business-card reference. It presents the company's applied-bioscience positioning, 12 business segments, example product families, reverse-engineering process, founders, and contact details.
+A responsive, single-page website for AquaBio Solutions LLP, based on the supplied company profile. It includes the applied-bioscience overview, 12 business segments, product families, reverse-engineering process, founders, contact details, and a visitor-selectable dark or light theme. The selected theme is remembered in the browser; the initial theme follows the device preference.
 
-## Preview
+## Preview locally
 
-This is a static website; no package installation or build step is required. Open `index.html` in a browser or serve the repository root with any static web server.
+No build tools or package installation are required. Open `index.html` in a browser, or serve the repository root with a static web server.
 
-## Files
+## Review before launch
 
-- `index.html` — page content and inline brand/hero illustrations
-- `styles.css` — layout, visual design, and responsive styles
-- `script.js` — mobile navigation and current-year display
+Confirm names, titles, product language, address, email addresses, and phone number against current company information. The phone and email details are from the supplied company profile. Descriptive and product language is draft marketing copy, not technical or regulatory claims.
 
-## Before launch
+## GitHub Pages
 
-Review names, titles, product language, address, email addresses, and phone number against current company information. The contact links use `aquabiollp@gmail.com`, `aquabiopurchase@gmail.com`, and `+91 99865 00299` as shown in the supplied company profile. Replace any outdated details before publishing. Marketing and product descriptions are a draft for review, not technical or regulatory claims.
-
-## Publish with GitHub Pages
-
-In the repository, open **Settings → Pages**, choose **Deploy from a branch**, then select the `main` branch and `/ (root)` folder. The repository must be public for free GitHub Pages hosting on GitHub Free; otherwise use an eligible plan or another static host.
+A GitHub Actions workflow in `.github/workflows/pages.yml` deploys the static site after pushes to `main` and can also be started manually. In **Settings → Pages**, choose **GitHub Actions** as the build and deployment source. If Pages cannot be enabled on this private repository, the GitHub account or organization plan does not support private Pages for it. The repository can remain private with an eligible plan; making it public would let anyone browse the repository and site.
