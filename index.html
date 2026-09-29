@@ -3,154 +3,434 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f6ef">
-  <meta name="description" content="AquaBio Solutions LLP develops applied-bioscience formulations for land, water and wellness.">
-  <title>AquaBio Solutions LLP — Reverse-engineered biosciences</title>
+  <meta name="theme-color" content="#eaf7f5">
+  <meta name="description" content="AquaBio Solutions LLP develops applied-bioscience formulations for aquaculture, agriculture, water, nutrition and wellness.">
+  <title>AquaBio Solutions LLP — Science in every drop</title>
+  <link rel="icon" type="image/svg+xml" href="assets/aquabio-mark.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    :root{color-scheme:light;--paper:#f5f6ef;--ink:#173e36;--muted:#69796d;--green:#829e63;--deep:#153e36;--line:#d9dfd1;--serif:Georgia,"Times New Roman",serif;font-family:"DM Sans",sans-serif;color:var(--ink);background:var(--paper);scroll-behavior:smooth;scroll-padding-top:90px}
-    *{box-sizing:border-box}body{margin:0}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{max-width:1240px;padding-inline:7%;margin:auto}
-    .skip{position:absolute;top:-100px;left:12px;background:white;padding:12px;z-index:10}.skip:focus{top:12px}
-    header{height:78px;padding-inline:6%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:relative;z-index:4;background:var(--paper)}
-    .brand{display:flex;align-items:center;gap:9px;font:800 16px Manrope,sans-serif;letter-spacing:-.5px}.brand svg{width:32px;height:32px;color:var(--green)}.brand small{font-size:11px;font-weight:600}
-    nav{display:flex;align-items:center;gap:30px;font-size:12px;font-weight:600}nav a:hover,.link:hover{color:var(--green)}.nav-cta{border:1px solid #9eab96;padding:11px 16px;border-radius:3px}.menu{display:none}
-    .hero{min-height:570px;padding-block:48px;display:grid;grid-template-columns:.95fr 1.05fr;align-items:center;gap:5%}.eyebrow{margin:0 0 20px;color:#75866a;font-size:9px;font-weight:700;letter-spacing:1px;text-transform:uppercase}.eyebrow:before{content:"";display:inline-block;width:7px;height:7px;background:#85a36b;border-radius:50%;margin:0 9px 1px 0}
-    h1,h2,h3{font-family:Manrope,sans-serif}h1{font-size:clamp(52px,7vw,83px);line-height:.99;letter-spacing:-5px;font-weight:600;margin:0 0 23px}h1 em,h2 em{font-family:var(--serif);font-weight:400}h1 em,h2 em{color:#7e995f}.lead{max-width:440px;color:var(--muted);font-size:14px;line-height:1.85;margin-bottom:25px}.actions{display:flex;align-items:center;gap:20px;flex-wrap:wrap}.button{display:inline-block;background:var(--deep);color:#f6f7ee;padding:14px 18px;font-size:11px;font-weight:600;border-radius:3px}.link{font-size:11px;font-weight:600}.note{margin-top:46px;font-size:10px;color:var(--muted)}.note b{color:var(--ink)}
-    .art{height:465px;position:relative;overflow:hidden;border-radius:48% 48% 3px 3px;background:radial-gradient(ellipse at 55% 30%,#e8eedf,#d6e2c9)}.sun{position:absolute;top:57px;left:49%;width:94px;height:94px;border-radius:50%;background:#e2c992}.orbit{position:absolute;left:calc(50% - 185px);top:35px;width:370px;height:370px;border:1px solid #879e783d;border-radius:50%}.land{position:absolute;bottom:0;left:-5%;width:110%;height:54%;background:#b3cc82;clip-path:polygon(0 34%,17% 21%,35% 34%,53% 0,70% 21%,84% 29%,100% 9%,100% 100%,0 100%)}.water{position:absolute;bottom:0;width:110%;height:25%;background:#244c43;clip-path:polygon(0 47%,18% 24%,37% 32%,56% 0,74% 29%,100% 9%,100% 100%,0 100%)}.stem{position:absolute;bottom:25%;left:53%;height:205px;width:6px;background:#466c48;border-radius:5px;transform:rotate(-3deg)}.leaf{position:absolute;width:70px;height:35px;background:#789763;border-radius:100% 0 100% 0}.leaf.one{left:calc(53% - 65px);bottom:51%;transform:rotate(18deg)}.leaf.two{left:53%;bottom:61%;transform:rotate(-42deg)}.leaf.three{left:calc(53% - 98px);bottom:65%;transform:rotate(22deg);background:#9bad70}.tag{position:absolute;background:#fbfcf4e8;padding:12px 15px;font-size:9px;color:#607365;box-shadow:0 6px 25px #173e3612}.tag.top{top:85px;left:4%}.tag.bottom{right:4%;bottom:58px}.art-note{position:absolute;right:18px;bottom:15px;color:white;font-size:9px;letter-spacing:1px}
-    .ticker{background:#e9eddf;border-block:1px solid var(--line);padding:17px 4%;text-align:center;color:#557051;font:700 9px Manrope,sans-serif;letter-spacing:1.1px;text-transform:uppercase}.ticker span{margin-inline:13px;color:#91a779}
-    section.content{padding-block:85px}.kicker{color:#7b8978;font-size:9px;font-weight:700;letter-spacing:1px;text-transform:uppercase}.kicker:after{content:"";display:inline-block;width:34px;height:1px;background:#abb79f;vertical-align:middle;margin-left:13px}.about-grid{display:grid;grid-template-columns:.95fr 1.05fr;align-items:center;gap:10%;margin-top:30px}.about-art{height:335px;border-radius:45% 45% 3px 3px;background:#e5eadb;display:grid;place-items:center;text-align:center;position:relative;overflow:hidden}.about-art:before,.about-art:after{content:"";position:absolute;width:230px;height:230px;border:1px solid #8da27c55;border-radius:50%}.about-art:after{width:300px;height:300px}.quote{z-index:1;font:22px/1.4 Manrope,sans-serif}.about-art small{position:absolute;bottom:18px;font-size:8px;text-transform:uppercase;letter-spacing:.7px;color:var(--muted)}h2{font-size:clamp(38px,5vw,59px);line-height:1.1;letter-spacing:-2.4px;font-weight:600;margin:22px 0 17px}.copy{font-size:11px;line-height:1.9;color:var(--muted);max-width:510px}.link{display:inline-block;margin-top:7px}
-    .segments{padding-top:10px!important}.heading-row{display:flex;justify-content:space-between;align-items:end;gap:30px}.heading-row h2{margin-bottom:0}.heading-row>p{max-width:330px;color:var(--muted);font-size:11px;line-height:1.8;margin:0 0 5px}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:36px}.card{min-height:156px;padding:17px;border:1px solid var(--line);background:#ffffff60;transition:transform .2s,background .2s}.card:hover{transform:translateY(-3px);background:white}.icon{width:33px;height:33px;border-radius:50%;display:grid;place-items:center;background:#e5ecdc;color:#688854;font-size:17px;margin-bottom:12px}.card:nth-child(3n+2) .icon{background:#e0edeb;color:#397c78}.card:nth-child(3n) .icon{background:#f1eada;color:#a87d4e}.card h3{font-size:12px;margin:0 0 6px}.card p{font-size:9px;line-height:1.65;color:var(--muted);margin:0}
-    .dark{background:var(--deep);color:#f4f5ed}.dark .wrap{padding-block:78px}.dark .kicker{color:#b1c0a4}.dark .kicker:after{background:#71856f}.dark h2 em{color:#bed29e}.dark .heading-row>p{color:#c0cec0}
-    .offer{display:grid;grid-template-columns:1.3fr .7fr;gap:48px;margin-top:32px}.offer-list{border-top:1px solid #ffffff3a}.offer-item{display:grid;grid-template-columns:35px 1fr;gap:12px;padding:16px 0;border-bottom:1px solid #ffffff3a}.offer-item>span{color:#b7cc98;font-size:9px}.offer-item h3{font-size:12px;margin:0 0 5px}.offer-item p{font-size:9px;line-height:1.7;color:#bdcbbb;margin:0}.seaweed{background:#204a3e;padding:25px;align-self:center}.seaweed b{color:#c3d3a2}.seaweed p{font-size:10px;line-height:1.8;color:#c3d0c2}
-    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:46px}.step{border-top:1px solid var(--line);padding-top:16px}.step small{color:#84927c}.step h3{font-size:13px;margin:22px 0 8px}.step p{font-size:10px;line-height:1.8;color:var(--muted);margin:0}
-    .founders{display:grid;grid-template-columns:1fr 1fr 1fr;gap:11px;margin-top:33px}.person{border:1px solid #ffffff29;background:#20483e;padding:20px}.person small{color:#b7c9ac;text-transform:uppercase;letter-spacing:.8px;font-size:8px}.person h3{font-size:17px;margin:11px 0}.person p{font-size:9px;line-height:1.8;color:#c3d0c2;margin:0}.vision{background:#e2ead6;color:var(--ink)}.vision p{color:#435f4e}
-    .contact{background:#e5ecda}.contact-grid{display:grid;grid-template-columns:1fr .85fr;gap:10%;align-items:center}.contact p{font-size:11px;line-height:1.8;color:var(--muted)}.details{border-top:1px solid #c8d3be}.detail{border-bottom:1px solid #c8d3be;padding:13px 0}.detail small{display:block;text-transform:uppercase;letter-spacing:.8px;color:#788778;font-size:8px;margin-bottom:6px}.detail a,.detail address{display:block;font-size:10px;font-weight:600;font-style:normal;margin:4px 0}.detail address{line-height:1.7;font-weight:400;color:#425d4f}
-    footer{padding:25px 6%;display:flex;justify-content:space-between;align-items:center;gap:15px;color:#778378;font-size:9px}footer p{margin:0}.footbrand{font:800 13px Manrope,sans-serif;color:var(--ink)}
-    :focus-visible{outline:2px solid #668b4f;outline-offset:4px}
-    @media(max-width:850px){.wrap{padding-inline:6%}.hero{min-height:auto}.art{height:400px}.cards{grid-template-columns:repeat(3,1fr)}.offer{gap:25px}nav{gap:17px}}
-    @media(max-width:620px){header{height:68px;padding-inline:5%}.brand{font-size:14px}.brand small{font-size:9px}.menu{display:flex;width:39px;height:39px;border:1px solid #aab6a4;background:none;border-radius:3px;align-items:center;justify-content:center;flex-direction:column;gap:5px}.menu span{width:16px;height:1px;background:var(--ink)}nav{display:none;position:absolute;top:67px;left:0;right:0;padding:13px 6% 19px;background:var(--paper);border-bottom:1px solid var(--line);align-items:stretch;gap:0}nav.open{display:flex;flex-direction:column}nav>a:not(.nav-cta){padding:12px 0}.nav-cta{text-align:center;margin-top:7px}.hero{grid-template-columns:1fr;padding-top:42px;padding-bottom:32px;gap:16px}h1{font-size:clamp(53px,15vw,72px);letter-spacing:-3.5px}.lead{font-size:13px}.note{display:none}.art{height:min(98vw,390px);margin-inline:2px}.sun{width:75px;height:75px;top:50px}.orbit{width:75vw;height:75vw;left:calc(50% - 37.5vw);top:20px}.ticker{font-size:8px;line-height:2}.ticker span{margin-inline:5px}.ticker span:nth-of-type(n+4){display:none}section.content{padding-block:65px}.about-grid{grid-template-columns:1fr;gap:26px;margin-top:24px}.about-art{height:290px;order:2}.about-copy{order:1}h2{font-size:42px;letter-spacing:-1.8px}.heading-row{display:block}.heading-row>p{margin-top:13px}.cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:23px}.card{min-height:150px;padding:13px}.card h3{font-size:11px}.card p{font-size:8px}.dark .wrap{padding-block:63px}.offer{grid-template-columns:1fr;gap:17px;margin-top:24px}.seaweed{padding:20px}.steps{grid-template-columns:1fr;gap:22px;margin-top:30px}.step{display:grid;grid-template-columns:30px 1fr;column-gap:10px}.step small{grid-row:1 / span 2}.step h3{margin:0 0 5px}.step p{grid-column:2}.founders{grid-template-columns:1fr;gap:8px;margin-top:22px}.person{padding:17px}.contact-grid{grid-template-columns:1fr;gap:22px}footer{display:grid;grid-template-columns:1fr auto;padding:21px 6%}footer p{grid-column:1/-1;grid-row:2}.footbrand{font-size:12px}}
-    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition-duration:.01ms!important}}
-    .theme-toggle{width:38px;height:38px;display:grid;place-items:center;flex:0 0 auto;border:1px solid #9eab96;border-radius:50%;background:transparent;color:var(--ink);font-size:18px;line-height:1;cursor:pointer}.theme-toggle:hover{background:#e9eddf}.theme-toggle .dark-icon{display:none}
-    html[data-theme="dark"]{color-scheme:dark;--paper:#111b17;--ink:#e7eee5;--muted:#b4c2b5;--green:#aec88d;--deep:#19392f;--line:#34483d}
-    html[data-theme="dark"] body{background:var(--paper);color:var(--ink)}
-    html[data-theme="dark"] header{border-color:var(--line)}
-    html[data-theme="dark"] .nav-cta{border-color:#718777}
-    html[data-theme="dark"] .theme-toggle{border-color:#718777}
-    html[data-theme="dark"] .theme-toggle:hover{background:#273a30}
-    html[data-theme="dark"] .theme-toggle .light-icon{display:none}
-    html[data-theme="dark"] .theme-toggle .dark-icon{display:inline}
-    html[data-theme="dark"] .eyebrow,html[data-theme="dark"] .kicker{color:#b2c39e}
-    html[data-theme="dark"] h1 em,html[data-theme="dark"] h2 em{color:#b5cb91}
-    html[data-theme="dark"] .ticker{background:#1b2921;border-color:var(--line);color:#c0d2ac}
-    html[data-theme="dark"] .about-art{background:#1c2b22}
-    html[data-theme="dark"] .about-art:before,html[data-theme="dark"] .about-art:after{border-color:#a5c29138}
-    html[data-theme="dark"] .about-art small{color:#a9b9a6}
-    html[data-theme="dark"] .card{background:#19251f;border-color:#35483d}
-    html[data-theme="dark"] .card:hover{background:#202e26;border-color:#657c64}
-    html[data-theme="dark"] .icon{background:#283a2c;color:#bdd69a}
-    html[data-theme="dark"] .card:nth-child(3n+2) .icon{background:#203633;color:#9ac6b9}
-    html[data-theme="dark"] .card:nth-child(3n) .icon{background:#393328;color:#d7b982}
-    html[data-theme="dark"] .step{border-color:var(--line)}
-    html[data-theme="dark"] .step small{color:#b5c49f}
-    html[data-theme="dark"] .vision{background:#dce8cf;color:#173e36}
-    html[data-theme="dark"] .vision p{color:#435f4e}
-    html[data-theme="dark"] .contact{background:#202e26}
-    html[data-theme="dark"] .details,html[data-theme="dark"] .detail{border-color:#46584a}
-    html[data-theme="dark"] .detail small{color:#bdc9b6}
-    html[data-theme="dark"] .detail address{color:#d0ddcf}
-    html[data-theme="dark"] footer{color:#b4c2b5}
-    html[data-theme="dark"] .footbrand{color:var(--ink)}
-    @media(max-width:620px){.theme-toggle{margin-left:auto;margin-right:10px}html[data-theme="dark"] nav{background:var(--paper);border-color:var(--line)}html[data-theme="dark"] .menu{border-color:#718777}html[data-theme="dark"] .menu span{background:var(--ink)}}
+    :root {
+      color-scheme: light;
+      --page: #eaf7f5;
+      --surface: rgba(255, 255, 255, .68);
+      --surface-strong: rgba(255, 255, 255, .84);
+      --glass-border: rgba(255, 255, 255, .82);
+      --text: #123b3d;
+      --muted: #557273;
+      --accent: #167c80;
+      --accent-bright: #35b7ad;
+      --deep: #0d3436;
+      --line: rgba(21, 87, 86, .15);
+      --shadow: 0 22px 70px rgba(34, 107, 108, .12);
+      --serif: Georgia, "Times New Roman", serif;
+      color: var(--text);
+      background: var(--page);
+      font-family: "DM Sans", sans-serif;
+      scroll-behavior: smooth;
+      scroll-padding-top: 105px;
+      font-synthesis: none;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+    :root[data-theme="dark"] {
+      color-scheme: dark;
+      --page: #071b20;
+      --surface: rgba(18, 51, 55, .68);
+      --surface-strong: rgba(21, 59, 63, .88);
+      --glass-border: rgba(173, 231, 221, .16);
+      --text: #e4f5ef;
+      --muted: #aecac4;
+      --accent: #69d3c3;
+      --accent-bright: #46caba;
+      --deep: #051317;
+      --line: rgba(173, 231, 221, .17);
+      --shadow: 0 24px 80px rgba(0, 0, 0, .22);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--text);
+      background:
+        radial-gradient(ellipse at 92% 7%, rgba(95, 206, 189, .2), transparent 28rem),
+        radial-gradient(ellipse at 5% 44%, rgba(130, 204, 207, .19), transparent 32rem),
+        var(--page);
+      transition: color .35s, background-color .35s;
+    }
+    a { color: inherit; text-decoration: none; }
+    button, input { font: inherit; }
+    button:focus-visible, a:focus-visible, input:focus-visible + span { outline: 3px solid var(--accent-bright); outline-offset: 4px; }
+    .shell { width: min(1240px, 100%); margin-inline: auto; padding-inline: clamp(22px, 6vw, 82px); }
+    .skip { position: absolute; top: -100px; left: 16px; z-index: 20; padding: 12px 16px; background: var(--surface-strong); border-radius: 12px; }
+    .skip:focus { top: 12px; }
+    .site-header { position: sticky; top: 12px; z-index: 10; width: min(1320px, calc(100% - 32px)); min-height: 76px; margin: 12px auto 0; padding: 12px clamp(14px, 3vw, 30px); display: flex; align-items: center; gap: clamp(14px, 3vw, 34px); border: 1px solid var(--glass-border); border-radius: 22px; background: var(--surface); box-shadow: 0 12px 42px rgba(26, 92, 96, .1); backdrop-filter: blur(24px) saturate(155%); -webkit-backdrop-filter: blur(24px) saturate(155%); }
+    .brand { display: inline-flex; align-items: center; gap: 10px; flex-shrink: 0; }
+    .brand img { width: 42px; height: 42px; object-fit: contain; }
+    .brand-name { font: 800 14px/1.2 Manrope, sans-serif; letter-spacing: -.45px; }
+    .brand-name small { display: block; margin-top: 3px; color: var(--muted); font-size: 9px; font-weight: 600; letter-spacing: 1.15px; text-transform: uppercase; }
+    .main-nav { display: flex; align-items: center; justify-content: center; gap: clamp(14px, 2.6vw, 34px); margin-left: auto; font-size: 11px; font-weight: 600; }
+    .main-nav a, .footer-nav a { transition: color .2s; }
+    .main-nav a:hover, .footer-nav a:hover { color: var(--accent); }
+    .header-actions { display: flex; align-items: center; gap: 10px; }
+    .theme-switch { display: inline-flex; align-items: center; gap: 8px; cursor: pointer; }
+    .theme-switch input { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; clip-path: inset(50%); }
+    .switch-track { position: relative; width: 58px; height: 34px; flex: 0 0 58px; display: flex; align-items: center; justify-content: space-between; padding: 0 8px; border: 1px solid var(--line); border-radius: 999px; background: linear-gradient(135deg, rgba(111,207,193,.22), var(--surface-strong)); box-shadow: inset 0 1px 4px rgba(17, 74, 75, .09); color: var(--accent); transition: background .25s, border-color .25s; }
+    .switch-track::after { position: absolute; top: 4px; left: 4px; width: 24px; height: 24px; border: 1px solid var(--glass-border); border-radius: 50%; background: var(--surface-strong); box-shadow: 0 2px 8px rgba(15, 71, 75, .19); content: ""; transition: transform .25s cubic-bezier(.2,.8,.2,1); }
+    .theme-switch input:checked + .switch-track::after { transform: translateX(24px); }
+    .theme-switch input:focus-visible + .switch-track { outline: 3px solid var(--accent-bright); outline-offset: 3px; }
+    .switch-icon { position: relative; z-index: 1; font-size: 12px; line-height: 1; }
+    .theme-state { min-width: 31px; color: var(--muted); font-size: 9px; font-weight: 600; }
+    .menu-button { display: none; width: 40px; height: 40px; align-items: center; justify-content: center; flex-direction: column; gap: 5px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); color: var(--text); cursor: pointer; }
+    .menu-button span { width: 16px; height: 1.5px; background: currentColor; transition: transform .2s; }
+    .menu-button[aria-expanded="true"] span:first-child { transform: translateY(3.25px) rotate(45deg); }
+    .menu-button[aria-expanded="true"] span:last-child { transform: translateY(-3.25px) rotate(-45deg); }
+    .button { min-height: 48px; padding: 0 20px; display: inline-flex; align-items: center; justify-content: center; gap: 13px; border: 1px solid rgba(255,255,255,.2); border-radius: 999px; background: linear-gradient(135deg, #148889, #155356); color: #f3fffb; box-shadow: 0 9px 26px rgba(14, 102, 102, .2); font-size: 11px; font-weight: 700; transition: transform .2s, box-shadow .2s; }
+    .button:hover { transform: translateY(-2px); box-shadow: 0 14px 34px rgba(14, 102, 102, .27); }
+    .button-quiet { border-color: var(--line); background: var(--surface); color: var(--text); box-shadow: none; }
+    .button-quiet:hover { box-shadow: var(--shadow); }
+    .eyebrow { display: flex; align-items: center; gap: 9px; margin: 0 0 18px; color: var(--accent); font-size: 9px; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase; }
+    .eyebrow::before { width: 7px; height: 7px; border-radius: 50%; background: var(--accent-bright); box-shadow: 0 0 0 5px rgba(53, 183, 173, .13); content: ""; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1, h2, h3 { font-family: Manrope, sans-serif; }
+    h1 { max-width: 720px; margin-bottom: 20px; font-size: clamp(53px, 8vw, 98px); font-weight: 600; line-height: .99; letter-spacing: -.075em; }
+    h1 em, h2 em { color: var(--accent); font-family: var(--serif); font-weight: 400; letter-spacing: -.055em; }
+    h2 { margin-bottom: 18px; font-size: clamp(36px, 5vw, 58px); font-weight: 600; line-height: 1.07; letter-spacing: -.065em; }
+    h3 { margin-bottom: 8px; font-size: 15px; font-weight: 700; letter-spacing: -.025em; }
+    .hero { position: relative; min-height: 610px; padding-top: clamp(70px, 10vw, 120px); padding-bottom: 83px; display: grid; grid-template-columns: 1.06fr .94fr; align-items: center; gap: 5%; }
+    .hero-copy { position: relative; z-index: 1; }
+    .hero-copy .eyebrow { max-width: 420px; line-height: 1.7; }
+    .hero-copy h1 { font-size: clamp(56px, 7.6vw, 91px); }
+    .hero-copy h1 em { display: inline-block; padding-left: .1em; }
+    .hero-lede { max-width: 440px; margin-bottom: 27px; color: var(--muted); font-size: 14px; line-height: 1.9; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 11px; }
+    .hero-proof { display: flex; align-items: center; gap: 12px; margin-top: 37px; color: var(--muted); font-size: 10px; }
+    .proof-icon { width: 34px; height: 34px; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 50%; color: var(--accent); font-size: 16px; }
+    .hero-visual { position: relative; min-height: 420px; overflow: hidden; border: 1px solid var(--glass-border); border-radius: 48% 48% 34px 34px; background: linear-gradient(165deg, rgba(223,248,239,.8), rgba(109,187,183,.32) 48%, rgba(17,83,86,.8)); box-shadow: var(--shadow); isolation: isolate; }
+    .hero-visual::before, .hero-visual::after { position: absolute; z-index: -1; border: 1px solid rgba(255,255,255,.5); border-radius: 50%; content: ""; }
+    .hero-visual::before { inset: 12% 9% 3%; }
+    .hero-visual::after { inset: 22% 18% 13%; }
+    .hero-visual svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+    .hero-float { position: absolute; z-index: 1; padding: 11px 14px; border: 1px solid rgba(255,255,255,.67); border-radius: 16px; background: rgba(245,255,251,.67); color: #174c4b; box-shadow: 0 12px 35px rgba(22,90,88,.12); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); font-size: 9px; }
+    .float-top { top: 7%; left: 50%; transform: translateX(-50%); white-space: nowrap; }
+    .float-bottom { right: 3%; bottom: 18%; }
+    .float-bottom strong { display: block; margin-top: 3px; font: 700 12px Manrope, sans-serif; }
+    .hero-logo { position: absolute; right: 10%; bottom: 6%; width: 41px; height: 41px; padding: 8px; border-radius: 50%; background: rgba(255,255,255,.77); }
+    .hero-logo img { width: 100%; height: 100%; object-fit: contain; }
+    .section { padding-top: 90px; padding-bottom: 90px; }
+    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 34px; }
+    .section-head .eyebrow { margin-bottom: 13px; }
+    .section-head h2 { margin-bottom: 0; }
+    .section-intro { max-width: 385px; margin-bottom: 5px; color: var(--muted); font-size: 12px; line-height: 1.85; }
+    .glass-panel { border: 1px solid var(--glass-border); border-radius: 24px; background: var(--surface); box-shadow: var(--shadow); backdrop-filter: blur(22px) saturate(145%); -webkit-backdrop-filter: blur(22px) saturate(145%); }
+    .about-layout { display: grid; grid-template-columns: .84fr 1.16fr; gap: 7%; align-items: center; }
+    .about-note { min-height: 285px; padding: 35px; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden; background: radial-gradient(ellipse at 82% 18%, rgba(74,193,175,.24), transparent 45%), var(--surface); }
+    .about-note img { width: 65px; height: 65px; object-fit: contain; }
+    .about-note blockquote { margin: 34px 0 0; font: 25px/1.35 Manrope, sans-serif; letter-spacing: -.055em; }
+    .about-note blockquote em { color: var(--accent); font-family: var(--serif); font-weight: 400; }
+    .about-copy p { max-width: 590px; margin-bottom: 14px; color: var(--muted); font-size: 12px; line-height: 1.9; }
+    .stat-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 32px; }
+    .stat { padding: 17px 18px; border: 1px solid var(--glass-border); border-radius: 19px; background: var(--surface); }
+    .stat strong { display: block; color: var(--accent); font: 700 24px Manrope, sans-serif; letter-spacing: -.06em; }
+    .stat span { display: block; margin-top: 5px; color: var(--muted); font-size: 9px; line-height: 1.5; }
+    .mission-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 13px; }
+    .mission-card { min-height: 157px; padding: 20px; }
+    .mission-card h3 { margin-bottom: 9px; font-size: 13px; }
+    .mission-card p { max-width: 490px; margin-bottom: 0; color: var(--muted); font-size: 10px; line-height: 1.8; }
+    .industry-grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 12px; }
+    .industry-card { min-height: 174px; padding: 18px; transition: transform .22s, border-color .22s, background .22s; }
+    .industry-card:hover { transform: translateY(-4px); border-color: rgba(42,160,151,.4); background: var(--surface-strong); }
+    .industry-icon { width: 37px; height: 37px; margin-bottom: 15px; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 14px; background: rgba(52,181,169,.1); color: var(--accent); font-size: 17px; }
+    .industry-card p { margin-bottom: 0; color: var(--muted); font-size: 10px; line-height: 1.7; }
+    .aquaculture-feature { position: relative; display: grid; grid-template-columns: 1fr .9fr; gap: 7%; align-items: center; overflow: hidden; padding: clamp(24px, 5vw, 54px); background: linear-gradient(125deg, rgba(35,156,150,.13), var(--surface) 58%); }
+    .aquaculture-feature::after { position: absolute; right: -80px; bottom: -145px; width: 330px; height: 330px; border: 1px solid var(--line); border-radius: 50%; box-shadow: 0 0 0 24px rgba(85,190,175,.04), 0 0 0 52px rgba(85,190,175,.04), 0 0 0 82px rgba(85,190,175,.035); content: ""; pointer-events: none; }
+    .aquaculture-feature .eyebrow { margin-bottom: 14px; }
+    .aquaculture-feature h2 { font-size: clamp(33px, 4vw, 48px); }
+    .aquaculture-feature p { position: relative; z-index: 1; color: var(--muted); font-size: 11px; line-height: 1.9; }
+    .concept-card { position: relative; z-index: 1; padding: 24px; border: 1px solid var(--glass-border); border-radius: 22px; background: var(--surface-strong); box-shadow: var(--shadow); }
+    .concept-card strong { display: block; margin-bottom: 9px; font: 700 13px Manrope, sans-serif; }
+    .concept-card small { color: var(--muted); font-size: 9px; line-height: 1.8; }
+    .note-disclaimer { display: block; margin-top: 10px; color: var(--muted); font-size: 8px; line-height: 1.6; }
+    .offer-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .offer-card { display: flex; gap: 17px; padding: 21px; }
+    .offer-card p { margin-bottom: 0; color: var(--muted); font-size: 10px; line-height: 1.7; }
+    .offer-card h3 { font-size: 13px; }
+    .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+    .process-card { min-height: 202px; padding: 20px; }
+    .process-card .step { color: var(--accent); font-size: 9px; font-weight: 700; letter-spacing: 1px; }
+    .process-card h3 { margin-top: 28px; }
+    .process-card p { margin-bottom: 0; color: var(--muted); font-size: 10px; line-height: 1.75; }
+    .manufacturing { padding: clamp(25px, 5vw, 51px); display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 35px; background: linear-gradient(125deg, rgba(48,174,162,.16), var(--surface) 72%); }
+    .manufacturing h2 { font-size: clamp(34px, 4vw, 48px); }
+    .manufacturing p { max-width: 610px; margin-bottom: 0; color: var(--muted); font-size: 11px; line-height: 1.85; }
+    .partner-options { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+    .partner-options span { padding: 8px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); font-size: 9px; font-weight: 600; }
+    .leadership-grid { display: grid; grid-template-columns: 1fr 1fr 1.1fr; gap: 12px; }
+    .leader-card, .vision-card { padding: 23px; }
+    .leader-card img { width: 45px; height: 45px; object-fit: contain; padding: 9px; border-radius: 50%; background: rgba(230,50,34,.09); }
+    .leader-card small, .vision-card small { display: block; margin: 18px 0 8px; color: var(--muted); font-size: 8px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+    .leader-card p, .vision-card p { margin-bottom: 0; color: var(--muted); font-size: 10px; line-height: 1.75; }
+    .vision-card { background: linear-gradient(145deg, rgba(54,190,174,.18), var(--surface)); }
+    .vision-card h3 { max-width: 310px; font: 400 21px/1.45 var(--serif); }
+    .contact-panel { position: relative; overflow: hidden; padding: clamp(27px, 6vw, 62px); display: grid; grid-template-columns: .95fr 1.05fr; gap: 8%; background: linear-gradient(130deg, rgba(39,170,160,.18), var(--surface) 62%); }
+    .contact-panel::after { position: absolute; right: -100px; top: -160px; width: 370px; height: 370px; border: 1px solid var(--line); border-radius: 50%; box-shadow: 0 0 0 26px rgba(85,190,175,.035), 0 0 0 54px rgba(85,190,175,.035); content: ""; }
+    .contact-copy, .contact-details { position: relative; z-index: 1; }
+    .contact-copy > p { max-width: 400px; margin-bottom: 20px; color: var(--muted); font-size: 11px; line-height: 1.85; }
+    .detail-row { padding: 13px 0; border-top: 1px solid var(--line); }
+    .detail-row small { display: block; margin-bottom: 7px; color: var(--muted); font-size: 8px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+    .detail-row a, .detail-row address { display: block; width: fit-content; margin: 4px 0; font-size: 10px; font-weight: 600; font-style: normal; }
+    .detail-row address { color: var(--muted); font-weight: 400; line-height: 1.75; }
+    .site-footer { padding-top: 34px; padding-bottom: 35px; display: flex; align-items: center; justify-content: space-between; gap: 20px; color: var(--muted); font-size: 9px; }
+    .footer-brand { display: flex; align-items: center; gap: 8px; color: var(--text); font: 700 11px Manrope, sans-serif; }
+    .footer-brand img { width: 28px; height: 28px; }
+    .footer-nav { display: flex; gap: 16px; }
+    .site-footer p { margin: 0; }
+    @supports not ((backdrop-filter: blur(2px))) { .glass-panel, .site-header, .hero-float { background: var(--surface-strong); } }
+    @media (max-width: 920px) {
+      .main-nav { gap: 15px; }
+      .main-nav a { font-size: 10px; }
+      .hero { min-height: auto; grid-template-columns: 1fr 1fr; padding-top: 75px; }
+      .hero-visual { min-height: 380px; }
+      .industry-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .process-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 700px) {
+      .site-header { top: 8px; width: calc(100% - 18px); min-height: 67px; margin-top: 8px; padding: 9px 11px; gap: 8px; border-radius: 19px; }
+      .brand { gap: 7px; }
+      .brand img { width: 34px; height: 34px; }
+      .brand-name { font-size: 12px; }
+      .brand-name small { font-size: 8px; }
+      .header-actions { margin-left: auto; }
+      .theme-switch { gap: 5px; }
+      .switch-track { width: 54px; height: 32px; flex-basis: 54px; padding-inline: 7px; }
+      .switch-track::after { top: 3px; left: 3px; width: 24px; height: 24px; }
+      .theme-switch input:checked + .switch-track::after { transform: translateX(22px); }
+      .menu-button { display: flex; flex: 0 0 38px; width: 38px; height: 38px; }
+      .main-nav { display: none; position: absolute; top: 73px; left: 0; right: 0; padding: 10px 18px 17px; align-items: stretch; gap: 0; border: 1px solid var(--glass-border); border-radius: 18px; background: var(--surface-strong); box-shadow: var(--shadow); backdrop-filter: blur(22px); -webkit-backdrop-filter: blur(22px); }
+      .main-nav.is-open { display: flex; flex-direction: column; }
+      .main-nav a { padding: 12px 5px; font-size: 11px; }
+      .hero { grid-template-columns: 1fr; gap: 28px; padding-top: 65px; padding-bottom: 55px; }
+      .hero-copy h1 { font-size: clamp(56px, 13vw, 78px); }
+      .hero-lede { font-size: 13px; }
+      .hero-visual { min-height: min(94vw, 390px); }
+      .section { padding-top: 62px; padding-bottom: 62px; }
+      .section-head { display: block; margin-bottom: 24px; }
+      .section-intro { margin-top: 14px; }
+      .about-layout { grid-template-columns: 1fr; gap: 25px; }
+      .about-note { min-height: 240px; padding: 24px; }
+      .about-note blockquote { margin-top: 20px; font-size: 21px; }
+      .stat-strip { gap: 7px; margin-top: 22px; }
+      .stat { padding: 13px 11px; }
+      .stat strong { font-size: 19px; }
+      .stat span { font-size: 8px; }
+      .mission-grid { grid-template-columns: 1fr; gap: 8px; }
+      .mission-card { min-height: auto; }
+      .industry-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+      .industry-card { min-height: 160px; padding: 14px; }
+      .industry-card h3 { font-size: 13px; }
+      .industry-card p { font-size: 9px; }
+      .aquaculture-feature { grid-template-columns: 1fr; gap: 14px; padding: 24px; }
+      .offer-grid { grid-template-columns: 1fr; gap: 8px; }
+      .offer-card { padding: 17px; }
+      .process-grid { gap: 8px; }
+      .process-card { min-height: 190px; padding: 15px; }
+      .process-card h3 { margin-top: 21px; font-size: 13px; }
+      .process-card p { font-size: 9px; }
+      .manufacturing { grid-template-columns: 1fr; gap: 20px; padding: 24px; }
+      .leadership-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+      .leader-card, .vision-card { padding: 16px; }
+      .vision-card { grid-column: 1 / -1; }
+      .contact-panel { grid-template-columns: 1fr; gap: 23px; padding: 25px; }
+      .site-footer { display: grid; grid-template-columns: 1fr auto; gap: 14px; }
+      .site-footer p { grid-column: 1 / -1; grid-row: 2; }
+      .footer-nav { grid-column: 1 / -1; grid-row: 3; }
+    }
+    @media (max-width: 390px) {
+      .theme-state { display: none; }
+      .brand-name { font-size: 11px; }
+      .hero-actions .button { padding-inline: 14px; font-size: 10px; }
+      .process-grid { grid-template-columns: 1fr; }
+      .process-card { min-height: auto; }
+      .process-card h3 { margin-top: 13px; }
+      .footer-nav { flex-wrap: wrap; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+    }
   </style>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  <header>
-    <a class="brand" href="#home" aria-label="AquaBio Solutions home"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M20 3C15 11 8 18 8 25a12 12 0 0 0 24 0C32 18 25 11 20 3Z" fill="currentColor"/><path d="M13 25c1 4 4 6 7 7" stroke="#f5f6ef" stroke-width="2" stroke-linecap="round"/></svg>AquaBio <small>Solutions LLP</small></a>
-    <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false" title="Switch to dark theme"><span class="light-icon" aria-hidden="true">☾</span><span class="dark-icon" aria-hidden="true">☀</span></button>
-    <button class="menu" aria-expanded="false" aria-controls="nav" aria-label="Open navigation"><span></span><span></span></button>
-    <nav id="nav" aria-label="Main navigation"><a href="#about">Who we are</a><a href="#segments">Industries</a><a href="#approach">Our process</a><a class="nav-cta" href="#contact">Talk to our team ↗</a></nav>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="AquaBio Solutions LLP home">
+      <img src="assets/aquabio-mark.svg" alt="">
+      <span class="brand-name">AquaBio<small>Solutions LLP</small></span>
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#industries">Industries</a>
+      <a href="#aquaculture">Aquaculture</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#process">Our approach</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <label class="theme-switch">
+        <input id="theme-switch" type="checkbox" role="switch" aria-label="Dark mode" aria-checked="false">
+        <span class="switch-track" aria-hidden="true"><span class="switch-icon">☀</span><span class="switch-icon">☾</span></span>
+        <span class="theme-state" aria-hidden="true">Light</span>
+      </label>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation"><span></span><span></span></button>
+    </div>
   </header>
   <main id="main">
-    <section class="hero wrap" id="home">
-      <div><p class="eyebrow">Reverse-engineered biosciences for land, water &amp; wellness</p><h1>Decode nature.<br><em>Rebuild</em> better.</h1><p class="lead">We study high-performance bio-formulations and rebuild them for Indian raw materials, needs, and cost structures—from first lab profile to scaled production.</p><div class="actions"><a class="button" href="#approach">How we work ↗</a><a class="link" href="#segments">Explore our industries ↓</a></div><p class="note">Applied bioscience, led by science.<br><b>Built for the real world.</b></p></div>
-      <div class="art" role="img" aria-label="Illustration of water, aquatic plants, and a growing leaf"><div class="sun"></div><div class="orbit"></div><div class="stem"></div><i class="leaf one"></i><i class="leaf two"></i><i class="leaf three"></i><div class="land"></div><div class="water"></div><span class="tag top">Land, water &amp; wellness</span><span class="tag bottom">Study it. <b>Rebuild it.</b></span><span class="art-note">AQUABIO · INDIA</span></div>
+    <section class="hero shell" id="home">
+      <div class="hero-copy">
+        <h1>Science in<br>every <em>drop.</em></h1>
+        <p class="hero-lede">We study how nature works, decode what makes formulations perform, and rebuild them for land, water and wellness.</p>
+        <div class="hero-actions"><a class="button" href="#solutions">Explore our solutions <span aria-hidden="true">↗</span></a><a class="button button-quiet" href="#about">Discover AquaBio <span aria-hidden="true">↓</span></a></div>
+        <div class="hero-proof"><span class="proof-icon" aria-hidden="true">✳</span><span>Reverse-engineered biosciences<br><strong>Rooted in local knowledge.</strong></span></div>
+      </div>
+      <div class="hero-visual" role="img" aria-label="AquaBio-inspired illustration of flowing water and a growing plant">
+        <svg viewBox="0 0 600 560" fill="none" aria-hidden="true">
+          <defs><linearGradient id="water" x1="300" y1="275" x2="300" y2="560" gradientUnits="userSpaceOnUse"><stop stop-color="#9CDDD1" stop-opacity=".82"/><stop offset="1" stop-color="#147579"/></linearGradient><linearGradient id="leaf" x1="210" y1="115" x2="391" y2="360" gradientUnits="userSpaceOnUse"><stop stop-color="#C9E9BD"/><stop offset="1" stop-color="#459A7F"/></linearGradient></defs>
+          <circle cx="420" cy="118" r="57" fill="#FFE7BA" fill-opacity=".85"/>
+          <path d="M0 353C87 309 154 343 239 302c84-40 148-103 231-61 55 27 95 12 130-6v325H0V353Z" fill="#B7E5D0" fill-opacity=".8"/>
+          <path d="M0 407c84-45 166-29 253-60 93-34 142-71 227-36 50 21 82 18 120-1v250H0V407Z" fill="url(#water)"/>
+          <path d="M301 409c5-86 5-179-3-276" stroke="#34765E" stroke-width="11" stroke-linecap="round"/>
+          <path d="M297 292c-85-52-133-119-121-198 88 22 137 85 135 179 43-83 99-119 167-111-12 83-66 133-157 148" fill="url(#leaf)"/>
+          <path d="M298 293c-59-77-99-140-122-199m125 201c37-62 93-107 167-133" stroke="#E4F3D3" stroke-opacity=".72" stroke-width="4" stroke-linecap="round"/>
+          <path d="M54 447c88-28 161-30 231-6m94 12c57-19 108-20 168-4M94 492c75-19 131-20 191-2" stroke="#F5FFEF" stroke-opacity=".55" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="169" cy="379" r="5" fill="#F2FFE9"/><circle cx="444" cy="386" r="4" fill="#F2FFE9"/><circle cx="499" cy="342" r="3" fill="#F2FFE9"/>
+        </svg>
+        <span class="hero-float float-top">Land · water · wellness</span>
+        <span class="hero-float float-bottom">Research-led formulations<strong>Designed for real-world use</strong></span>
+        <span class="hero-logo"><img src="assets/aquabio-mark.svg" alt=""></span>
+      </div>
     </section>
-    <div class="ticker">Aquaculture <span>✳</span> Applied biosciences <span>✳</span> Marine-algal innovation <span>✳</span> Reverse engineering</div>
-    <section class="content wrap" id="about"><div class="kicker">01 — Who we are · Applied biosciences</div><div class="about-grid"><div class="about-art"><div class="quote">Reverse-engineered<br>biosciences for<br><em>land, water &amp; wellness.</em></div><small>AquaBio Solutions LLP · Karnataka, India</small></div><div class="about-copy"><h2>Formulations,<br><em>decoded and rebuilt.</em></h2><p class="copy">AquaBio Solutions LLP is a Karnataka-headquartered applied-biosciences company. We study, deconstruct, and rebuild bio-formulations—including probiotics, bio-enzymes, biostimulants, fermentation cultures, and marine-algal extracts.</p><p class="copy">Every reference product becomes a case study: profiled, reformulated around Indian raw materials and cost structures, then manufactured in-house or with contract-production partners.</p><a class="link" href="#approach">Our process ↗</a></div></div></section>
-    <section class="content wrap segments" id="segments"><div class="kicker">02 — Where we work · One shared microbiology platform</div><div class="heading-row"><h2>One platform.<br><em>Twelve segments.</em></h2><p>Applied bioscience spanning land, water, food, feed, and wellness—with formulations shaped around each industry's needs.</p></div><div class="cards">
-      <article class="card"><span class="icon">≈</span><h3>Aquaculture</h3><p>Pond-ready probiotics, prebiotics, feed premixes, ammonia binders, and more.</p></article>
-      <article class="card"><span class="icon">✳</span><h3>Agriculture</h3><p>Bio-fertilizers, bio-pesticides, biostimulants, soil conditioners, and growth promoters.</p></article>
-      <article class="card"><span class="icon">❋</span><h3>Horticulture</h3><p>Foliar micronutrients, soil activators, and post-harvest formulations.</p></article>
-      <article class="card"><span class="icon">◒</span><h3>Dairy &amp; cattle</h3><p>Vitamin-mineral premixes, rumen-enzyme boosters, and fermented silage products.</p></article>
-      <article class="card"><span class="icon">◇</span><h3>Poultry</h3><p>Gut-health probiotics, feed enzymes, and nutrition-support formulations.</p></article>
-      <article class="card"><span class="icon">◌</span><h3>ETP / STP</h3><p>Bio-enzyme consortia, sludge-digestion cultures, and ammonia and odour binders.</p></article>
-      <article class="card"><span class="icon">☕</span><h3>Specialty coffee</h3><p>Fermentation starter cultures and controlled mucilage-breakdown protocols.</p></article>
-      <article class="card"><span class="icon">✧</span><h3>Cosmeceuticals</h3><p>Marine-actives research and development, from pilot to bulk production.</p></article>
-      <article class="card"><span class="icon">✿</span><h3>Nutraceuticals</h3><p>Low-temperature dehydrated medicinal-weed powders and functional products.</p></article>
-      <article class="card"><span class="icon">◈</span><h3>Feed premix</h3><p>Custom vitamin-mineral-enzyme premixes for species-specific nutrition targets.</p></article>
-      <article class="card"><span class="icon">⌕</span><h3>Reverse engineering &amp; NPD</h3><p>Reference-product profiling, formulation decoding, and new product development.</p></article>
-      <article class="card"><span class="icon">↗</span><h3>Contract manufacturing</h3><p>In-house, private-label, and third-party production to suit each project.</p></article>
-    </div></section>
-    <section class="dark"><div class="wrap"><div class="kicker">03 — Product portfolio · Designed for the application</div><div class="heading-row"><h2>Practical biology.<br><em>Purpose-built blends.</em></h2><p>Formulation families draw on microbiology, enzymology, fermentation, and marine-algal research.</p></div><div class="offer"><div class="offer-list">
-      <div class="offer-item"><span>01</span><div><h3>Microbial &amp; enzyme solutions</h3><p>Probiotics · prebiotics · bio-enzymes · fermentation cultures · photosynthetic bacteria</p></div></div>
-      <div class="offer-item"><span>02</span><div><h3>Crop &amp; soil formulations</h3><p>Bio-fertilizers · bio-pesticides · biostimulants · zeolite · growth promoters</p></div></div>
-      <div class="offer-item"><span>03</span><div><h3>Water &amp; pond support</h3><p>Ammonia binders · parasite-control blends · algae solutions · immunostimulants</p></div></div>
-      <div class="offer-item"><span>04</span><div><h3>Nutrition &amp; specialty products</h3><p>Vitamin-mineral premixes · feed enzymes · gels · sanitizers · marine-algal extracts</p></div></div>
-    </div><aside class="seaweed"><b>✳ &nbsp; A SIGNATURE THREAD</b><h3>Land science meets sea science.</h3><p>The company profile highlights seaweed-based innovation across its segments—from agricultural biostimulants to aquaculture and wellness formulations.</p></aside></div></div></section>
-    <section class="content wrap" id="approach"><div class="kicker">04 — How we work · From benchmark to manufacture</div><div class="heading-row"><h2>Decode.<br><em>Reformulate.</em><br>Make it real.</h2><p>Reverse engineering is the method behind the work: profile the reference, understand the composition, and develop a practical alternative for local production.</p></div><div class="steps">
-      <article class="step"><small>01</small><div><h3>Benchmark &amp; profile</h3><p>Study a reference product, its actives, strains, ratios, or performance targets.</p></div></article>
-      <article class="step"><small>02</small><div><h3>Decode &amp; reformulate</h3><p>Translate the composition into a reproducible brief using locally available inputs.</p></div></article>
-      <article class="step"><small>03</small><div><h3>Trial &amp; manufacture</h3><p>Move from pilot and validation toward in-house, private-label, or contract production.</p></div></article>
-    </div></section>
-    <section class="dark"><div class="wrap"><div class="kicker">05 — The people behind AquaBio · Science led, operations built</div><div class="heading-row"><h2>Two founders.<br><em>One shared vision.</em></h2><p>Scientific direction and operational execution come together across AquaBio's applied-bioscience work.</p></div><div class="founders">
-      <article class="person"><small>Founder &amp; CEO</small><h3>Aathreya</h3><p>M.F.Sc, PGDIM<br>Leads the scientific direction and reverse-engineering brief behind new formulations.</p></article>
-      <article class="person"><small>Co-founder &amp; Operations</small><h3>Thanmaya</h3><p>Leads manufacturing scale-up, quality systems, and contract-production execution.</p></article>
-      <article class="person vision"><small>Our vision</small><p>To be the applied-biosciences partner land-and-water industries in India turn to first.</p></article>
-    </div></div></section>
-    <section class="content contact" id="contact"><div class="contact-grid"><div><div class="kicker">Let's work on what's next</div><h2>Bring us your<br>formulation brief.</h2><p>Have a reference product, an R&amp;D question, or a manufacturing need? Start a conversation with AquaBio Solutions.</p><a class="button" href="mailto:aquabiollp@gmail.com?subject=AquaBio%20Solutions%20-%20Project%20enquiry">Email our team ↗</a></div><div class="details">
-      <div class="detail"><small>Email</small><a href="mailto:aquabiollp@gmail.com">aquabiollp@gmail.com</a><a href="mailto:aquabiopurchase@gmail.com">aquabiopurchase@gmail.com · Purchases</a></div>
-      <div class="detail"><small>Call</small><a href="tel:+919986500299">+91 99865 00299</a></div>
-      <div class="detail"><small>Registered office</small><address>No. 61, Behind P.L.D. Bank, Agrahara, Gandhi Nagara,<br>Sagara 577401, Shivamogga District,<br>Karnataka, India</address></div>
-    </div></div></section>
+
+    <section class="section shell" id="about">
+      <div class="about-layout">
+        <div class="about-note glass-panel"><img src="assets/aquabio-mark.svg" alt="AquaBio Solutions logo"><blockquote>Reverse-engineered biosciences for <em>land, water &amp; wellness.</em></blockquote></div>
+        <div class="about-copy"><p class="eyebrow">Who we are</p><h2>Formulations,<br><em>decoded and rebuilt.</em></h2><p>AquaBio Solutions LLP is a Karnataka-headquartered applied-biosciences company. We study, deconstruct and rebuild formulations—including probiotics, bio-enzymes, biostimulants, fermentation cultures and marine-algal extracts.</p><p>We work across agriculture, aquaculture, horticulture, animal nutrition, wastewater, specialty coffee, personal care and wellness. Each brief is shaped around its application and local context.</p><p>The company profile describes a research-led path from reference-product profiling through reformulation and manufacturing, in-house or with production partners.</p></div>
+      </div>
+      <div class="stat-strip" aria-label="AquaBio at a glance"><div class="stat"><strong>12</strong><span>business segments in the company profile</span></div><div class="stat"><strong>4 steps</strong><span>from benchmark to production</span></div><div class="stat"><strong>India</strong><span>formulations considered for local materials and needs</span></div></div>
+      <div class="mission-grid"><article class="mission-card glass-panel"><p class="eyebrow">Our mission</p><h3>Reformulate biology for real-world needs.</h3><p>AquaBio's company profile describes developing and manufacturing fermentation-, enzyme-, probiotic- and seaweed-based solutions, with an emphasis on local production and cleaner water systems.</p></article><article class="mission-card glass-panel"><p class="eyebrow">Our vision</p><h3>A trusted bioscience partner for land and water.</h3><p>The company aspires to be a first-call applied-biosciences partner for land-and-water industries across India.</p></article></div>
+    </section>
+
+    <section class="section shell" id="industries">
+      <div class="section-head"><div><p class="eyebrow">Industries</p><h2>One biology platform.<br><em>Many applications.</em></h2></div><p class="section-intro">AquaBio's profile spans twelve connected sectors, with formulation work tailored to the needs of each one.</p></div>
+      <div class="industry-grid">
+        <article class="industry-card glass-panel"><span class="industry-icon">≈</span><h3>Aquaculture</h3><p>Pond probiotics, feed premixes, ammonia binders and related support.</p></article>
+        <article class="industry-card glass-panel"><span class="industry-icon">✳</span><h3>Agriculture</h3><p>Bio-fertilizers, bio-pesticides, biostimulants and soil conditioners.</p></article>
+        <article class="industry-card glass-panel"><span class="industry-icon">❋</span><h3>Horticulture</h3><p>Foliar nutrition, soil activation and post-harvest formulations.</p></article>
+        <article class="industry-card glass-panel"><span class="industry-icon">◒</span><h3>Dairy &amp; cattle</h3><p>Vitamin-mineral premixes, rumen enzymes and silage products.</p></article>
+        <article class="industry-card glass-panel"><span class="industry-icon">◇</span><h3>Poultry</h3><p>Gut-health probiotics, feed enzymes and nutrition support.</p></article>
+        <article class="industry-card glass-panel"><span class="industry-icon">◌</span><h3>ETP / STP</h3><p>Bio-enzyme consortia and wastewater-treatment cultures.</p></article>
+        <article class="industry-card glass-panel"><span class="industry-icon">☕</span><h3>Specialty coffee</h3><p>Fermentation starters and controlled processing protocols.</p></article>
+        <article class="industry-card glass-panel"><span class="industry-icon">✧</span><h3>Cosmeceuticals</h3><p>Marine-actives R&amp;D and production for partner brands.</p></article>
+        <article class="industry-card glass-panel"><span class="industry-icon">✿</span><h3>Nutraceuticals</h3><p>Medicinal-weed powders and functional product development.</p></article>
+        <article class="industry-card glass-panel"><span class="industry-icon">◈</span><h3>Feed premix</h3><p>Custom vitamin, mineral and enzyme nutrition blends.</p></article>
+        <article class="industry-card glass-panel"><span class="industry-icon">⌕</span><h3>R&amp;D &amp; new products</h3><p>Reference profiling, formulation decoding and development.</p></article>
+        <article class="industry-card glass-panel"><span class="industry-icon">↗</span><h3>Contract manufacturing</h3><p>In-house, private-label and third-party manufacturing.</p></article>
+      </div>
+    </section>
+
+    <section class="section shell" id="aquaculture">
+      <article class="aquaculture-feature glass-panel">
+        <div><p class="eyebrow">Aquaculture focus</p><h2>Healthier ponds<br>start with <em>balance.</em></h2><p>AquaBio's earlier aquaculture concept explores a biological approach to pond conditions: looking at feed waste and fish excreta alongside external-parasite pressure, including Argulus and Lernaea.</p><p>The 2021 company post describes research into beneficial bacterial growth as an alternative to harmful chemical treatment. The post frames this as a product concept intended to help reduce parasite recurrence; efficacy and current commercial availability are not independently verified.</p><a class="button button-quiet" href="https://aquabiollp.wordpress.com/" target="_blank" rel="noreferrer">Read the original article <span aria-hidden="true">↗</span></a></div>
+        <aside class="concept-card"><strong>Biology-led pond-care concept</strong><small>Study the pond ecosystem · consider organic load · explore a lower-chemical-impact approach. Contact AquaBio directly to confirm current product status, application guidance and supporting evidence.</small><span class="note-disclaimer">Product descriptions reflect company-published material and are not a guarantee of treatment outcomes.</span></aside>
+      </article>
+    </section>
+
+    <section class="section shell" id="solutions">
+      <div class="section-head"><div><p class="eyebrow">Formulations</p><h2>Purpose-built blends.<br><em>Thoughtfully made.</em></h2></div><p class="section-intro">Microbiology, enzymology, fermentation and marine-algal research meet real-world formulation briefs.</p></div>
+      <div class="offer-grid">
+        <article class="offer-card glass-panel"><div><h3>Microbial &amp; enzyme solutions</h3><p>Probiotics, prebiotics, bio-enzymes, fermentation cultures and photosynthetic bacteria.</p></div></article>
+        <article class="offer-card glass-panel"><div><h3>Crop &amp; soil formulations</h3><p>Bio-fertilizers, bio-pesticides, biostimulants, zeolite and growth promoters.</p></div></article>
+        <article class="offer-card glass-panel"><div><h3>Water &amp; pond support</h3><p>Ammonia binders, algae solutions, parasite-control blends and immunostimulants.</p></div></article>
+        <article class="offer-card glass-panel"><div><h3>Nutrition &amp; specialty</h3><p>Vitamin-mineral premixes, feed enzymes, gels, sanitizers and marine-algal extracts.</p></div></article>
+      </div>
+    </section>
+
+    <section class="section shell" id="process">
+      <div class="section-head"><div><p class="eyebrow">Our process</p><h2>From benchmark<br>to <em>better fit.</em></h2></div><p class="section-intro">A clear, collaborative journey from understanding the brief to planning for production.</p></div>
+      <div class="process-grid">
+        <article class="process-card glass-panel"><span class="step">UNDERSTAND</span><h3>Benchmark &amp; profile</h3><p>Study the reference, intended application and performance brief.</p></article>
+        <article class="process-card glass-panel"><span class="step">DECODE</span><h3>Map the formulation</h3><p>Investigate actives, strains, ratios and other formulation details.</p></article>
+        <article class="process-card glass-panel"><span class="step">REFORMULATE</span><h3>Adapt for the context</h3><p>Develop a reproducible formulation suited to local materials and requirements.</p></article>
+        <article class="process-card glass-panel"><span class="step">SCALE</span><h3>Trial &amp; manufacture</h3><p>Plan pilot, validation and suitable production arrangements together.</p></article>
+      </div>
+    </section>
+
+    <section class="section shell">
+      <div class="manufacturing glass-panel"><div><p class="eyebrow">Manufacturing partnerships</p><h2>From first brief<br>to <em>production.</em></h2><p>From R&amp;D and product development to manufacturing, AquaBio's company profile describes flexible engagement models for project needs.</p><div class="partner-options"><span>Own-brand formulations</span><span>Private label</span><span>Contract production</span></div></div><a class="button" href="#contact">Discuss your project <span aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <section class="section shell" id="team">
+      <div class="section-head"><div><p class="eyebrow">The people behind AquaBio</p><h2>Science led.<br><em>Operations built.</em></h2></div><p class="section-intro">Scientific direction and operational execution come together across the company's applied-bioscience work.</p></div>
+      <div class="leadership-grid">
+        <article class="leader-card glass-panel"><img src="assets/aquabio-mark.svg" alt=""><small>Founder &amp; CEO</small><h3>Aathreya</h3><p>M.F.Sc, PGDIM. Leads scientific direction and the reverse-engineering brief behind new formulations.</p></article>
+        <article class="leader-card glass-panel"><img src="assets/aquabio-mark.svg" alt=""><small>Co-founder &amp; Operations</small><h3>Thanmaya</h3><p>Leads manufacturing scale-up, quality systems and contract-production execution.</p></article>
+        <article class="vision-card glass-panel"><small>Our vision</small><h3>To be the applied-biosciences partner every land-and-water industry in India turns to first.</h3><p>As described in the AquaBio company profile.</p></article>
+      </div>
+    </section>
+
+    <section class="section shell" id="contact">
+      <div class="contact-panel glass-panel">
+        <div class="contact-copy"><p class="eyebrow">Start a conversation</p><h2>Bring us your<br>formulation brief.</h2><p>Have a reference product, R&amp;D question or manufacturing need? Tell us a little about what you're working on.</p><a class="button" href="mailto:aquabiollp@gmail.com?subject=AquaBio%20Solutions%20-%20Project%20enquiry">Email our team <span aria-hidden="true">↗</span></a></div>
+        <div class="contact-details">
+          <div class="detail-row"><small>General enquiries</small><a href="mailto:aquabiollp@gmail.com">aquabiollp@gmail.com</a></div>
+          <div class="detail-row"><small>Purchases</small><a href="mailto:aquabiopurchase@gmail.com">aquabiopurchase@gmail.com</a></div>
+          <div class="detail-row"><small>Call</small><a href="tel:+919986500299">+91 99865 00299</a></div>
+          <div class="detail-row"><small>Registered office</small><address>No. 61, Behind P.L.D. Bank, Agrahara, Gandhi Nagara,<br>Sagara 577401, Shivamogga District,<br>Karnataka, India</address></div>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer><a class="footbrand" href="#home">AquaBio Solutions LLP</a><p>Reverse-engineered biosciences for land, water &amp; wellness.</p><span>© <span id="year"></span> AquaBio Solutions LLP</span><a href="#home">Back to top ↑</a></footer>
+  <footer class="site-footer shell">
+    <a class="footer-brand" href="#home"><img src="assets/aquabio-mark.svg" alt="">AquaBio Solutions LLP</a>
+    <p>Reverse-engineered biosciences for land, water &amp; wellness.</p>
+    <nav class="footer-nav" aria-label="Footer navigation"><a href="#industries">Industries</a><a href="#process">Our process</a><a href="#contact">Contact</a></nav>
+    <span>© <span id="year"></span></span>
+  </footer>
   <script>
-    const themeButton = document.querySelector('.theme-toggle');
-    const colorScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    const themeSwitch = document.querySelector('#theme-switch');
+    const themeState = document.querySelector('.theme-state');
+    const systemTheme = window.matchMedia('(prefers-color-scheme: dark)');
     const savedTheme = localStorage.getItem('aquabio-theme');
-    const applyTheme = theme => {
+
+    function applyTheme(theme) {
       document.documentElement.dataset.theme = theme;
-      const dark = theme === 'dark';
-      themeButton.setAttribute('aria-pressed', String(dark));
-      themeButton.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
-      themeButton.title = dark ? 'Switch to light theme' : 'Switch to dark theme';
-      document.querySelector('meta[name="theme-color"]').content = dark ? '#111b17' : '#f5f6ef';
-    };
-    applyTheme(savedTheme === 'dark' || savedTheme === 'light' ? savedTheme : colorScheme.matches ? 'dark' : 'light');
-    themeButton.addEventListener('click', () => {
-      const theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+      themeSwitch.checked = theme === 'dark';
+      themeSwitch.setAttribute('aria-checked', String(themeSwitch.checked));
+      themeState.textContent = themeSwitch.checked ? 'Dark' : 'Light';
+      document.querySelector('meta[name="theme-color"]').content = theme === 'dark' ? '#071b20' : '#eaf7f5';
+    }
+
+    applyTheme(savedTheme === 'dark' || savedTheme === 'light' ? savedTheme : systemTheme.matches ? 'dark' : 'light');
+    themeSwitch.addEventListener('change', () => {
+      const theme = themeSwitch.checked ? 'dark' : 'light';
       localStorage.setItem('aquabio-theme', theme);
       applyTheme(theme);
     });
-    colorScheme.addEventListener('change', event => {
+    systemTheme.addEventListener('change', event => {
       if (!localStorage.getItem('aquabio-theme')) applyTheme(event.matches ? 'dark' : 'light');
     });
-    const menu = document.querySelector('.menu');
-    const nav = document.querySelector('#nav');
-    menu.addEventListener('click', () => {
-      const open = menu.getAttribute('aria-expanded') === 'true';
-      menu.setAttribute('aria-expanded', String(!open));
-      menu.setAttribute('aria-label', open ? 'Open navigation' : 'Close navigation');
-      nav.classList.toggle('open', !open);
+
+    const menuButton = document.querySelector('.menu-button');
+    const mainNav = document.querySelector('.main-nav');
+    menuButton.addEventListener('click', () => {
+      const open = menuButton.getAttribute('aria-expanded') === 'true';
+      menuButton.setAttribute('aria-expanded', String(!open));
+      menuButton.setAttribute('aria-label', open ? 'Open navigation' : 'Close navigation');
+      mainNav.classList.toggle('is-open', !open);
     });
-    nav.addEventListener('click', event => {
+    mainNav.addEventListener('click', event => {
       if (event.target.closest('a')) {
-        menu.setAttribute('aria-expanded', 'false');
-        menu.setAttribute('aria-label', 'Open navigation');
-        nav.classList.remove('open');
+        menuButton.setAttribute('aria-expanded', 'false');
+        menuButton.setAttribute('aria-label', 'Open navigation');
+        mainNav.classList.remove('is-open');
       }
     });
     document.querySelector('#year').textContent = new Date().getFullYear();
