@@ -20,4 +20,4 @@ Product descriptions are draft marketing content, not technical, medical, enviro
 
 ## GitHub Pages
 
-The `.github/workflows/pages.yml` workflow deploys the website after pushes to `dev` or `main`, or a manual workflow dispatch. Choose **GitHub Actions** under **Settings → Pages**. GitHub Pages websites are publicly accessible; private repository publishing requires an eligible GitHub plan.
+The `.github/workflows/pages.yml` workflow deploys the website after pushes to `dev` or `main`, or a manual workflow dispatch. If the initial workflow run cannot create the Pages site, an owner must enable it under **Settings → Pages → Build and deployment → GitHub Actions**. GitHub Pages websites are publicly accessible; private repository publishing requires an eligible GitHub plan.
